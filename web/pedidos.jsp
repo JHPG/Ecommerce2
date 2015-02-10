@@ -36,7 +36,11 @@
 
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container"  style="
+    position: absolute;
+    left: 920px;
+">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -137,7 +141,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Daniele, Jorge, Marcelo e Raphael</p>
+                    <p>Copyright &copy;</p>
                 </div>
             </div>
         </footer>
