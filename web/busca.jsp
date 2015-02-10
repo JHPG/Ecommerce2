@@ -2,7 +2,7 @@
     Document   : busca
     Created on : 05/10/2014, 01:12:07
     Author     : JHenrique
---%>
+--%> 
 
 <%@page import="Controller.BuscaController"%>
 <%@page import="Controller.Command"%>
