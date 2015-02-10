@@ -145,7 +145,7 @@
                         <% 
                         if(produtos.isEmpty() == false){
                             %>
-                        <form class="row" method="POST" action="/Ecommerce/FrontController">
+                        <form class="row" method="POST" action="/Ecommerce2/FrontController">
                             <h4 class="tituCarrinho"> Forma de pagamento: 
                                 <input type="radio" id="pagamento1" name="pagamento" value="Boleto" required>
                                     <label for="pagamento1"><img name="formas" src="imagens/boleto.png" /></label>
@@ -155,6 +155,8 @@
                                     <label for="pagamento3"><img name="formas" src="imagens/master.jpg" /></label>
                                 <input type="radio" id="pagamento4" name="pagamento" value="Visa">
                                     <label for="pagamento4"><img name="formas" src="imagens/visa.png" /></label>
+                                <input type="radio" id="pagamento5" name="pagamento" value="naEntrega">
+                                    <label for="pagamento5"><img name="formas" src="imagens/naEntrega.png" /></label>
                                 <br/>
                                 <input type="hidden" name="acao" value="gerarPedido" />
                                 <!-- Adicionar input com dados do usuário gerarPedido-->
@@ -180,7 +182,6 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Daniele, Jorge, Marcelo e Raphael</p>
                 </div>
             </div>
         </footer>

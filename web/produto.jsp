@@ -97,7 +97,7 @@
         </div>
         <div class="row" style="float:right">
         <!--_____________________________-->
-            <a href="/Ecommerce/FrontController?acao=carrinho&car=add&CodProd=<%=prod.getIdProduto()%>" class="btn btn-success" style="padding:7%">
+            <a href="/Ecommerce2/FrontController?acao=carrinho&car=add&CodProd=<%=prod.getIdProduto()%>" class="btn btn-success" style="padding:7%">
                 <h3><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</h3>
             </a>
             <!-- Link de remover no carrinho:
@@ -124,7 +124,6 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Daniele, Jorge, Marcelo e Raphael</p>
                 </div>
             </div>
         </footer>
