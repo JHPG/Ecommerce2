@@ -1,8 +1,4 @@
-<%-- 
-    Document   : carrinho
-    Created on : Oct 13, 2014, 7:50:07 PM
-    Author     : JHenrique
---%>
+
 
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
