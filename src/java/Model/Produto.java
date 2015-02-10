@@ -1,9 +1,5 @@
 package Model;
 
-/**
- *
- * @author rapharma
- */
 public class Produto {
     private int idProduto;
     private String nome;
