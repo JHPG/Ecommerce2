@@ -2,7 +2,7 @@
     Document   : busca
     Created on : 05/10/2014, 01:12:07
     Author     : JHenrique
---%>
+--%> 
 
 <%@page import="Controller.BuscaController"%>
 <%@page import="Controller.Command"%>
@@ -26,6 +26,7 @@
     <!-- Custom CSS -->
     <link href="css/shop-homepage.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/shop-item.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +40,10 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container"  style="
+    position: absolute;
+    left: 950px;
+">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -125,9 +129,9 @@
                                                 <img src="<%="img/produtos/"+p.getIdProduto()+".jpg"%>" alt="" class="thumb" style="max-height:150px; width:auto">
                                             </a>
                                             <div class="caption">
-                                                <h4 class="pull-right"> <%="R$"+p.getPreco()%> </h4>
+                                                
                                                 <h4><a href="produto.jsp?CodProd=<%=p.getIdProduto()%>"><%=p.getNome()%></a></h4>
-
+                                                <h4 class="preco"> <%="R$"+p.getPreco()%> </h4>
                                                 <p><%=p.getDescricao()%></p>
 
                                                 <a href="produto.jsp?CodProd=<%=p.getIdProduto()%>" type="button" class="btn btn-default pull-right">
