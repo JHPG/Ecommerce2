@@ -45,8 +45,10 @@ public class LoginController extends HttpServlet {
         
         ClienteDAO cl = new ClienteDAO();
         
-        if(senha == cl.getCliente(login).getSenha())
+        if(senha == cl.getCliente(login).getSenha()){
             response.sendRedirect("busca.jsp");
+            sessao.setAttribute("login", login);
+        }
         else
             response.sendRedirect("login.jsp");
     }
