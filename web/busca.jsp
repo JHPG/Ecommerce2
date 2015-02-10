@@ -26,6 +26,7 @@
     <!-- Custom CSS -->
     <link href="css/shop-homepage.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/shop-item.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -125,9 +126,9 @@
                                                 <img src="<%="img/produtos/"+p.getIdProduto()+".jpg"%>" alt="" class="thumb" style="max-height:150px; width:auto">
                                             </a>
                                             <div class="caption">
-                                                <h4 class="pull-right"> <%="R$"+p.getPreco()%> </h4>
+                                                
                                                 <h4><a href="produto.jsp?CodProd=<%=p.getIdProduto()%>"><%=p.getNome()%></a></h4>
-
+                                                <h4 class="preco"> <%="R$"+p.getPreco()%> </h4>
                                                 <p><%=p.getDescricao()%></p>
 
                                                 <a href="produto.jsp?CodProd=<%=p.getIdProduto()%>" type="button" class="btn btn-default pull-right">
