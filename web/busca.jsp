@@ -189,7 +189,7 @@
 
     </div>
     <!-- /.container -->
-
+    
     <div class="container">
 
         <hr>
@@ -200,6 +200,11 @@
                 <div class="col-lg-12">
                     <p>Copyright &copy;</p>
                 </div>
+                <img src="<%="img/foto1.jpg"%>" alt="" class="thumb" style="max-height:150px; width:auto" id="nome1">
+                <img src="<%="img/foto2.jpg"%>" alt="" class="thumb" style="max-height:150px; width:auto" id="nome2">
+                <img src="<%="img/foto3.jpg"%>" alt="" class="thumb" style="max-height:150px; width:auto">
+                <img src="<%="img/foto4.jpg"%>" alt="" class="thumb" style="max-height:150px; width:auto">
+                <img src="<%="img/foto5.jpg"%>" alt="" class="thumb" style="max-height:150px; width:auto">  
             </div>
         </footer>
 
