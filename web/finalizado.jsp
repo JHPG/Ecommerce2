@@ -1,17 +1,29 @@
-<%-- 
-    Document   : finalizado
-    Created on : 11/02/2015, 10:00:54
-    Author     : Jhpg
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@page language = "java" %>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Finalizado</title>
-    </head>
-    <body>
-        <h2>Pedido finalizado. Seu produto estÃ¡ sendo enviado.</h2>
-    </body>
+<head>
+<title>Teste de envio de e-mails !</title>
+</head>
+<body>
+    <h1>Por favor, Entre com e-mail para confirmação!</h1>
+<form action="javamail.jsp" method="post">
+<p>
+<input type="hidden" name="de" value="entrega@booksu4.com.br" size="45">
+</p>
+ 
+<p>E-mail destinatário:
+<input type="text" name="para" size="45">
+</p>
+ 
+<p>
+<input type="hidden" name="assunto" value="Envio de Produto" size="45">
+</p>
+ 
+<p>
+<input type="hidden" value="Pedido finalizado. Seu produto está sendo enviado para o endereço de Cadastro!" name="comenta">
+</p>
+ 
+<p>&nbsp; </p>
+ 
+<p>
+<input type="submit" name="Submit" value="Enviar">
 </html>

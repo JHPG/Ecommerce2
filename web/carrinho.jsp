@@ -145,7 +145,7 @@
                         <% 
                         if(produtos.isEmpty() == false){
                             %>
-                        <form class="row" method="POST" action="finalizado.jsp">
+                        <form class="row" method="POST" action="javamail.jsp">
                             <h4 class="tituCarrinho"> Forma de pagamento: 
                                 <input type="radio" id="pagamento1" name="pagamento" value="Boleto" required>
                                     <label for="pagamento1"><img name="formas" src="imagens/boleto.png" /></label>
@@ -167,6 +167,21 @@
                                 <label for="pa2">Aluno</label>
                                 <input type="radio" id="pa2" name="pa" value="alu">
                                     <br/>
+                                    <p>
+<input type="hidden" name="de" value="entrega@booksu4.com.br" size="45">
+</p>
+ 
+<p>E-mail destinatário:
+<input type="text" name="para" size="45">
+</p>
+ 
+<p>
+<input type="hidden" name="assunto" value="Envio de Produto" size="45">
+</p>
+ 
+<p>
+<input type="hidden" value="Pedido finalizado. Seu produto está sendo enviado para o endereço de Cadastro!" name="comenta">
+</p>
                                 <p><input type="submit" class="btn btn-success pull-right" value="Finalizar compra"><br/><br/></p>
                             </h4>   
                         </form>
