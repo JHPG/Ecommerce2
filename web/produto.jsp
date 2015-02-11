@@ -86,7 +86,7 @@
             </div> -->
 
             <div class="thumbnail">
-                <img class="img-responsive" src="<%="img/"+prod.getIdProduto()+".jpg"%>" style="max-height:350px;width:auto" alt="">
+                <img class="img-responsive" src="<%="img/"+prod.getIdProduto()+".jpeg"%>" style="max-height:350px;width:auto" alt="">
                 <!-- <img class="img-responsive" src="http://placehold.it/800x300" style="max-width:800px" alt=""> -->
                 <div class="caption-full">
                     <h4 class="pull-right"><%="R$"+prod.getPreco() %></h4>

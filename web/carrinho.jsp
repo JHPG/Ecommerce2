@@ -128,7 +128,7 @@
                                         soma += p.getPreco(); // * p.getQtd();
                                     %>
                                         <div class="row" style="display:block; text-align:left; margin:2%">
-                                            <img style="width:20%" src="img/produtos/<%=p.getIdProduto()%>.jpg" alt="">
+                                            <img style="width:20%" src="img/produtos/<%=p.getIdProduto()%>.jpeg" alt="">
                                             <p style="display:inline; margin:1%"><%=p.getNome()+" - <b>R$"+p.getPreco()+"</b>"%></p>
                                             <a href="/Ecommerce/FrontController?acao=carrinho&car=remove&CodProd=<%=p.getIdProduto()%>" style="padding:3%">
                                                 <img style="width:2.3%" src="imagens/excluir.gif" alt="">

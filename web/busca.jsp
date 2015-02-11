@@ -124,7 +124,7 @@
                                     <div class="col-sm-3 col-lg-3 col-md-3">
                                         <div class="thumbnail">
                                             <a href="produto.jsp?CodProd=<%=p.getIdProduto()%>">
-                                                <img src="<%="img/produtos/"+p.getIdProduto()+".jpg"%>" alt="" class="thumb" style="max-height:150px; width:auto">
+                                                <img src="<%="img/produtos/"+p.getIdProduto()+".jpeg"%>" alt="" class="thumb" style="max-height:150px; width:auto">
                                             </a>
                                             <div class="caption">
                                                 
