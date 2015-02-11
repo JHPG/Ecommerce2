@@ -42,9 +42,7 @@
    function check() {
     var x = $('input[name=pa]:checked').val();
     if (x == 'prof' || x == 'alu')
-        $("#mensagem_desconto").html('<br clear="all"><br clear="all"><div class="info">Por favor insira um nome de domÃ­nio de sua escolha para procurar.</div><br clear="all"><br clear="all">');
-    else
-        document.getElementById("domain-availability").style.display = "none";
+        $("#mensagem_desconto").html('<br clear="all"><br clear="all"><div class="info">Você tera desconto de 25%.</div><br clear="all"><br clear="all">');
    
 }
 
@@ -177,7 +175,7 @@
                                 <label for="pa1">Professor</label>
                                 <input type="radio" id="pa1" name="pa" value="prof" onclick="check()">
                                 <label for="pa2">Aluno</label>
-                                <input type="radio" id="pa2" name="pa" value="alu" onclick="check">
+                                <input type="radio" id="pa2" name="pa" value="alu" onclick="check()">
                                 <br/>
                                 <div id="mensagem_desconto"></div>
                                 
