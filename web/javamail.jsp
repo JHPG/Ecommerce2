@@ -32,7 +32,7 @@ variasPartes.addBodyPart(corpoPartes);
  
 message.setContent(variasPartes);
 Transport.send(message);
-out.println("E-mail enviado");
+out.println("Compra Realizada com Sucesso! Seu pedido esta sendo Enviado!");
 }
 catch (MessagingException e) {
 out.println("Email nao pode ser enviado! " + e.getMessage());
