@@ -42,10 +42,12 @@
    function check() {
     var x = $('input[name=pa]:checked').val();
     if (x == 'prof' || x == 'alu'){
-        $("#mensagem_desconto").html('<br clear="all"><br clear="all"><div class="info">Você tera desconto de 25%.</div><br clear="all"><br clear="all">');
+        document.getElementById("universidade").style.display = "inline";
+        $("#mensagem_desconto").html('<br clear="all"><div class="info">Você tera desconto de 25%.</div><br clear="all">');
         document.getElementById("soma").innerHTML = document.getElementById("soma_original").value * 0.75;
     }
    else{
+       document.getElementById("universidade").style.display = "none";
        $("#mensagem_desconto").html('<br clear="all">');
        document.getElementById("soma").innerHTML = document.getElementById("soma_original").value;
        
@@ -195,8 +197,14 @@
                                 <input type="radio" id="pa2" name="pa" value="alu" onclick="check()">
                                 <label for="pa2">Aluno</label><br>
                                 <br/>
-                                <div id="mensagem_desconto"></div>
-                                
+                                <div id="mensagem_desconto"></div><br>
+                                <div id="universidade" style="display: none;">
+                                    <input type="text"id="nome" name="nome" placeholder="Nome" ><br>
+                                    <input type="text"id="universidade" name="universidade" placeholder="Universidade" ><br>
+                                    <input type="text"id="registro" name="registro" placeholder="Registro" ><br>
+                                </div><br>
+                               
+                                <p> Por favor, Entre com e-mail para confirmação! </p>
                                 <p>
                                     <input type="hidden" name="de" value="entrega@booksu4.com.br" size="45">
                                 </p>
