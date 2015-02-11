@@ -41,10 +41,23 @@
         <script>
    function check() {
     var x = $('input[name=pa]:checked').val();
-    if (x == 'prof' || x == 'alu')
+    if (x == 'prof' || x == 'alu'){
         $("#mensagem_desconto").html('<br clear="all"><br clear="all"><div class="info">Você tera desconto de 25%.</div><br clear="all"><br clear="all">');
+        document.getElementById("soma").innerHTML = document.getElementById("soma_original").value * 0.75;
+    }
+   else{
+       $("#mensagem_desconto").html('<br clear="all">');
+       document.getElementById("soma").innerHTML = document.getElementById("soma_original").value;
+       
+   }
    
 }
+ 
+    function soma(){
+        var x = $('input[name=pa]:checked').val(); 
+        if (x == 'prof' || x == 'alu')
+        document.getElementById("soma").innerHTML *= 0.75;
+    }
 
         </script>
 
@@ -145,8 +158,8 @@
                                             </a>
                                         </div>
                                     <% } %>
-
-                                <h4 class="tituCarrinho"> Total:  R$<%=soma%></h4>
+                                    <input type="hidden" value="<%=soma%>"id="soma_original">
+                                    <h4 class="tituCarrinho"> Total:  R$<span id="soma"><%=soma%></span></h4>
                         <% 
                                 }catch(Exception e){}
                         %>
@@ -172,10 +185,15 @@
                                 <!-- Adicionar input com dados do usuário gerarPedido-->
                                 <br/>
                                 
-                                <label for="pa1">Professor</label>
+                                
+                                <input type="radio" id="pa0" name="pa" value="pu" onclick="check()">
+                                <label for="pu">Público Geral</label><br>
+                                
                                 <input type="radio" id="pa1" name="pa" value="prof" onclick="check()">
-                                <label for="pa2">Aluno</label>
+                                <label for="pa1">Professor</label><br>
+                                
                                 <input type="radio" id="pa2" name="pa" value="alu" onclick="check()">
+                                <label for="pa2">Aluno</label><br>
                                 <br/>
                                 <div id="mensagem_desconto"></div>
                                 
