@@ -43,6 +43,7 @@ public class LoginController extends HttpServlet {
         String login = request.getParameter("login").toString();
         String senha = request.getParameter("senha").toString();
         
+        /*
         ClienteDAO cl = new ClienteDAO();
         
         if(senha == cl.getCliente(login).getSenha()){
@@ -51,6 +52,10 @@ public class LoginController extends HttpServlet {
         }
         else
             response.sendRedirect("login.jsp");
+        */
+        //Revisar esse trecho e achar NullPointer
+        
+        response.sendRedirect("busca.jsp"); //Remover
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
