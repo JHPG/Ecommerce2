@@ -35,6 +35,9 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        
+            <img src="imagens/logoBooks4U.png" style="height:60px" />
+            
         <div class="container"  style="display: inline-block; float: right; width: 30%;"> 
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">

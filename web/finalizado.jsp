@@ -19,7 +19,7 @@
 </p>
  
 <p>
-<input type="hidden" value="Pedido finalizado. Seu produto está sendo enviado para o endereço de Cadastro!" name="comenta">
+<input type="hidden" value="Pedido finalizado. Seu produto est? sendo enviado para o endere?o de Cadastro!" name="comenta">
 </p>
  
 <p>&nbsp; </p>
