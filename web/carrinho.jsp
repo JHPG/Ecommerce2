@@ -145,7 +145,7 @@
                         <% 
                         if(produtos.isEmpty() == false){
                             %>
-                        <form class="row" method="POST" action="/Ecommerce2/FrontController">
+                        <form class="row" method="POST" action="finalizado.jsp">
                             <h4 class="tituCarrinho"> Forma de pagamento: 
                                 <input type="radio" id="pagamento1" name="pagamento" value="Boleto" required>
                                     <label for="pagamento1"><img name="formas" src="imagens/boleto.png" /></label>
@@ -156,10 +156,17 @@
                                 <input type="radio" id="pagamento4" name="pagamento" value="Visa">
                                     <label for="pagamento4"><img name="formas" src="imagens/visa.png" /></label>
                                 <input type="radio" id="pagamento5" name="pagamento" value="naEntrega">
-                                    <label for="pagamento5"><img name="formas" src="imagens/naEntrega.png" /></label>
+                                    <label for="pagamento5"><img name="formas" src="imagens/pagarNaEntrega.png" width="66px" height="auto" /></label>
                                 <br/>
                                 <input type="hidden" name="acao" value="gerarPedido" />
                                 <!-- Adicionar input com dados do usuário gerarPedido-->
+                                <br/>
+                                
+                                <label for="pa1">Professor</label>
+                                <input type="radio" id="pa1" name="pa" value="prof">
+                                <label for="pa2">Aluno</label>
+                                <input type="radio" id="pa2" name="pa" value="alu">
+                                    <br/>
                                 <p><input type="submit" class="btn btn-success pull-right" value="Finalizar compra"><br/><br/></p>
                             </h4>   
                         </form>
