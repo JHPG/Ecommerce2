@@ -37,6 +37,18 @@
                 border-radius: 2px;
             }
         </style>
+        
+        <script>
+   function check() {
+    var x = $('input[name=pa]:checked').val();
+    if (x == 'prof' || x == 'alu')
+        $("#mensagem_desconto").html('<br clear="all"><br clear="all"><div class="info">Por favor insira um nome de domÃ­nio de sua escolha para procurar.</div><br clear="all"><br clear="all">');
+    else
+        document.getElementById("domain-availability").style.display = "none";
+   
+}
+
+        </script>
 
     </head>
 
@@ -166,26 +178,28 @@
                                 <input type="radio" id="pa1" name="pa" value="prof">
                                 <label for="pa2">Aluno</label>
                                 <input type="radio" id="pa2" name="pa" value="alu">
-                                    <br/>
-                                    <p>
-<input type="hidden" name="de" value="entrega@booksu4.com.br" size="45">
-</p>
- 
-<p>E-mail destinatário:
-<input type="text" name="para" size="45">
-</p>
- 
-<p>
-<input type="hidden" name="assunto" value="Envio de Produto" size="45">
-</p>
- 
-<p>
-<input type="hidden" value="Pedido finalizado. Seu produto está sendo enviado para o endereço de Cadastro!" name="comenta">
-</p>
+                                <br/>
+                                <div id="mensagem_desconto"></div>
+                                
+                                <p>
+                                    <input type="hidden" name="de" value="entrega@booksu4.com.br" size="45">
+                                </p>
+
+                                <p>E-mail destinatário:
+                                    <input type="text" name="para" size="45">
+                                </p>
+
+                                <p>
+                                    <input type="hidden" name="assunto" value="Envio de Produto" size="45">
+                                </p>
+
+                                <p>
+                                    <input type="hidden" value="Pedido finalizado. Seu produto está sendo enviado para o endereço de Cadastro!" name="comenta">
+                                </p>
                                 <p><input type="submit" class="btn btn-success pull-right" value="Finalizar compra"><br/><br/></p>
                             </h4>   
                         </form>
-                        <%  } %>
+                        <%  }%>
                     </div>      
 
                 </div>
