@@ -175,9 +175,9 @@
                                 <br/>
                                 
                                 <label for="pa1">Professor</label>
-                                <input type="radio" id="pa1" name="pa" value="prof">
+                                <input type="radio" id="pa1" name="pa" value="prof" onclick="check()">
                                 <label for="pa2">Aluno</label>
-                                <input type="radio" id="pa2" name="pa" value="alu">
+                                <input type="radio" id="pa2" name="pa" value="alu" onclick="check">
                                 <br/>
                                 <div id="mensagem_desconto"></div>
                                 
